@@ -21,7 +21,8 @@ RUN ./gradlew bootWar -x test
 # ============================================
 # STAGE 2: Run — Ejecutar con OpenJDK
 # ============================================
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jre-alpine
+
 
 # Directorio de trabajo
 WORKDIR /app
